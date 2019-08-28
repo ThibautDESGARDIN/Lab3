@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+	<!-- <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /> -->
+	<title>Agir avec un formulaire</title>
+</h:head>
+<h:body bgcolor="white">
+	<div align="center">
+		<h1 class="title">JSF 2: Managed Beans</h1>
+		<br />
+		<fieldset>
+			<legend>Bank Customer lookup</legend>
+			<h:form>
+			Customer ID: 
+			<h:inputText value="#{bankingBean.customerId}" />
+				<br/>Password:
+				<h:inputSecret value="#{bankingBean.password}" />
+				<br/>
+				<h:commandButton value="Voir Balance" action="#{bankingBean.showBalance}" />
+
+			</h:form>
+
+		</fieldset>
+	</div>
+
+</h:body>
+</html>
